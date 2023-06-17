@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NASARovers:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NASARovers_jar</output-path>
+    <root id="archive" name="NASARovers.jar">
+      <element id="module-output" name="NASARovers" />
+    </root>
+  </artifact>
+</component>
