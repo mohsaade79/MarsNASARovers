@@ -18,8 +18,8 @@ public class NASARoverApplication {
         scanner = new Scanner(inputStream);
 
         if(scanner.hasNextLine()) {
-        String dimention[]=scanner.nextLine().split(" ");
-        plateau= new Plateau(Integer.parseInt(dimention[0]),Integer.parseInt(dimention[1]));
+        String dimension[]=scanner.nextLine().split(" ");
+        plateau= new Plateau(Integer.parseInt(dimension[0]),Integer.parseInt(dimension[1]));
         System.out.println(plateau);
         }
 
