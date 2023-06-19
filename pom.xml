@@ -39,7 +39,7 @@
             </descriptorRefs>
             <archive>
                 <manifest>
-                    <mainClass>org.alaf.Main</mainClass>
+                    <mainClass>org.alaf.NASARoverApplication</mainClass>
                 </manifest>
             </archive>
         </configuration>

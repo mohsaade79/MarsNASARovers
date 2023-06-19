@@ -8,14 +8,14 @@ import org.alaf.model.Rover;
 import java.io.*;
 import java.util.Scanner;
 
-public class Main {
+public class NASARoverApplication {
    private Plateau plateau;
-   public static Scanner scanner=null;
-   private InputStream is;
-    public Main(String file)  {
+   public static Scanner scanner;
+   private InputStream inputStream;
+    public NASARoverApplication(String file)  {
 
-        is = getClass().getClassLoader().getResourceAsStream(file);
-        scanner = new Scanner(is);
+        inputStream = getClass().getClassLoader().getResourceAsStream(file);
+        scanner = new Scanner(inputStream);
 
         if(scanner.hasNextLine()) {
         String dimention[]=scanner.nextLine().split(" ");
@@ -40,9 +40,9 @@ public class Main {
     public static void main(String[] args) {
         try {
 
-            Main main= new Main(args[0]);
-            main.parseRovers();
-            main.plateau.moveRovers();
+            NASARoverApplication application= new NASARoverApplication(args[0]);
+            application.parseRovers();
+            application.plateau.moveRovers();
 
         } catch (Exception exception) {
             System.out.println(exception.getMessage());
